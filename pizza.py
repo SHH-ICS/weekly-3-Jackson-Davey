@@ -9,8 +9,8 @@ while True:
     print("What size pizza are you looking for today? (L or XL)")
     pizzaSize = str(input())
     if pizzaSize != "L" and pizzaSize != "XL":
-        print("Pizza must be either large or extra large (please use capital letters)")
-    elif pizzaSize == "L":
+        print("Pizza must be either large or extra large (L or XL)")
+    elif pizzaSize == "L" or pizzaSize == "l" or pizzaSize == "Large" or pizzaSize == "large":
         print("How many toppings do you want (0 - 4)")
         topping = int(input())
         if topping > 4 or topping < 0:
@@ -32,7 +32,7 @@ while True:
         else:
             print("Answer must be either Y or N (please use capital letters)")
             break
-    elif pizzaSize == "XL":
+    elif pizzaSize == "XL" or pizzaSize == "Xl" or pizzaSize == "xL" or pizzaSize == "xl" or pizzaSize == "Extra large" or pizzaSize == "extra large":
         print("How many toppings do you want (0 - 4)")
         topping = int(input())
         if topping > 4 or topping < 0:
@@ -47,9 +47,9 @@ while True:
         print("Total is: $", roundedTotal)
         print("Would you like another pizza? (Y or N)")
         retry = input()
-        if retry == "Y":
+        if retry == "Y" or retry == "y":
             time.sleep(1)
-        elif retry == "N":
+        elif retry == "N" or retry == "n":
             break
         else:
             print("Answer must be either Y or N (please use capital letters)")
