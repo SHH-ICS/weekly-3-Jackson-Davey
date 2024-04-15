@@ -6,10 +6,10 @@ toppingValue = [0,1,1.75,2.50,3.35]
 while True:
     print("Welcome to Papa Davey's pizza parlor")
     time.sleep(2)
-    print("What size pizza are you looking for today? (L or XL)")
+    print("What size pizza are you looking for today? (Large or Extra large)")
     pizzaSize = str(input())
     if pizzaSize != "L" and pizzaSize != "XL":
-        print("Pizza must be either large or extra large (L or XL)")
+        print("Pizza must be either large or extra large")
     elif pizzaSize == "L" or pizzaSize == "l" or pizzaSize == "Large" or pizzaSize == "large":
         print("How many toppings do you want (0 - 4)")
         topping = int(input())
@@ -32,7 +32,7 @@ while True:
         else:
             print("Answer must be either Y or N (please use capital letters)")
             break
-    elif pizzaSize == "XL" or pizzaSize == "Xl" or pizzaSize == "xL" or pizzaSize == "xl" or pizzaSize == "Extra large" or pizzaSize == "extra large":
+    elif pizzaSize == "XL" or pizzaSize == "Xl" or pizzaSize == "xL" or pizzaSize == "xl" or pizzaSize == "Extra large" or pizzaSize == "extra large" or pizzaSize == "extra Large":
         print("How many toppings do you want (0 - 4)")
         topping = int(input())
         if topping > 4 or topping < 0:
