@@ -27,6 +27,9 @@ while True:
             time.sleep(1)
         elif retry == "N":
             break
+        else:
+            print("Answer must be either Y or N (please use capital letters)")
+            break
     elif pizzaSize == "XL":
         print("How many toppings do you want (0 - 4)")
         topping = int(input())
@@ -44,4 +47,7 @@ while True:
         if retry == "Y":
             time.sleep(1)
         elif retry == "N":
+            break
+        else:
+            print("Answer must be either Y or N (please use capital letters)")
             break
