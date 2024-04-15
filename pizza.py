@@ -1,4 +1,5 @@
 import time
+import math
 
 toppingValue = [0,1,1.75,2.50,3.35]
 
@@ -14,6 +15,7 @@ while True:
         topping = int(input())
         if topping > 4 or topping < 0:
             print("Toppings must be within 0 and 4 (no decimals)")
+            break
         subTotal = 6 + toppingValue[topping]
         print("Subtotal is: $", subTotal)
         total = subTotal * 1.13
@@ -35,6 +37,7 @@ while True:
         topping = int(input())
         if topping > 4 or topping < 0:
             print("Toppings must be within 0 and 4! (no decimals)")
+            break
         subTotal = 10 + toppingValue[topping]
         print("Subtotal is: $", subTotal)
         total = subTotal * 1.13
