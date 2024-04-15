@@ -6,7 +6,7 @@ toppingValue = [0,1,1.75,2.50,3.35]
 while True:
     print("Welcome to Papa Davey's pizza parlor")
     time.sleep(2)
-    print("What size pizza are you looking for today? (Large or Extra large)")
+    print("What size pizza are you looking for? (Large or Extra large)")
     pizzaSize = str(input())
     if pizzaSize != "L" and pizzaSize != "XL" and pizzaSize != "l" and pizzaSize != "Large" and pizzaSize != "large" and pizzaSize != "Xl" and pizzaSize != "xL" and pizzaSize != "xl" and pizzaSize != "Extra large" and pizzaSize != "extra large" and pizzaSize != "extra Large":
         print("Pizza must be either large or extra large")
