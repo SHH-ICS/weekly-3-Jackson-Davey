@@ -25,9 +25,9 @@ while True:
         print("Total is: $", roundedTotal)
         print("Would you like another pizza? (Y or N)")
         retry = input()
-        if retry == "Y":
+        if retry == "Y" or retry == "y":
             time.sleep(1)
-        elif retry == "N":
+        elif retry == "N" or retry == "n":
             break
         else:
             print("Answer must be either Y or N (please use capital letters)")
