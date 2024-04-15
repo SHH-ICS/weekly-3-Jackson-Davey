@@ -8,7 +8,7 @@ while True:
     time.sleep(2)
     print("What size pizza are you looking for today? (Large or Extra large)")
     pizzaSize = str(input())
-    if pizzaSize != "L" and pizzaSize != "XL":
+    if pizzaSize != "L" and pizzaSize != "XL" and pizzaSize != "l" and pizzaSize != "Large" and pizzaSize != "large" and pizzaSize != "Xl" and pizzaSize != "xL" and pizzaSize != "xl" and pizzaSize != "Extra large" and pizzaSize != "extra large" and pizzaSize != "extra Large":
         print("Pizza must be either large or extra large")
     elif pizzaSize == "L" or pizzaSize == "l" or pizzaSize == "Large" or pizzaSize == "large":
         print("How many toppings do you want (0 - 4)")
