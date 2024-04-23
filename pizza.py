@@ -4,7 +4,7 @@ import math
 toppingValue = [0,1,1.75,2.50,3.35]
 
 while True:
-    print("Welcome to Papa Davey's pizza parlor")
+    print("Welcome to Papa Jackson's pizza parlor")
     time.sleep(2)
     print("What size pizza are you looking for? (Large or Extra large)")
     pizzaSize = str(input())
